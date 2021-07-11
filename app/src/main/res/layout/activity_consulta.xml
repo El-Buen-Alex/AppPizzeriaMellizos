@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ola"
+    tools:context=".Consulta"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="873dp"
+        android:layout_marginBottom="47dp"
+        android:text="GASTOS"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/totalGastos2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="544dp"
+        android:layout_marginEnd="341dp"
+        android:layout_marginBottom="48dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="13sp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="264dp"
+        android:layout_height="253dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-6dp"
+        android:layout_marginEnd="7dp"
+        app:srcCompat="@drawable/logoooo" />
+
+    <Button
+        android:id="@+id/btnBuscar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="212dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="166dp"
+        android:text="Buscar"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtFecha"
+        android:layout_width="198dp"
+        android:layout_height="53dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="239dp"
+        android:autoText="false"
+        android:clickable="true"
+        android:focusable="false"
+        android:text="Seleccionar Fecha"
+        android:textIsSelectable="false"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/mues"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="601dp"
+        android:background="@color/purple_500"
+        android:backgroundTint="@color/purple_500"
+        android:fontFamily="serif"
+        android:padding="10sp"
+        android:text="Fecha del registro:"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/txtfechaa"
+        android:layout_width="305dp"
+        android:layout_height="44dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="296dp"
+        android:background="@color/purple_500"
+        android:backgroundTint="@color/purple_500"
+        android:fontFamily="serif"
+        android:padding="10sp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textView55"
+        android:layout_width="920dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-403dp"
+        android:layout_marginBottom="0dp"
+        android:background="@color/purple_700"
+        android:fontFamily="serif"
+        android:text="TOTAL"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView56"
+        android:layout_width="297dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="665dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="-1dp"
+        android:background="@color/purple_700"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/totalitoConsultito"
+        android:layout_width="164dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="501dp"
+        android:layout_marginBottom="-1dp"
+        android:background="@color/purple_700"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <TableLayout
+        android:id="@+id/tableLayout2"
+        android:layout_width="668dp"
+        android:layout_height="456dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="296dp">
+
+        <TableRow
+            android:id="@+id/lay"
+            android:layout_width="669dp"
+            android:layout_height="wrap_content"
+            tools:layout_conversion_absoluteHeight="1dp"
+            tools:layout_conversion_absoluteWidth="962dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/purple_500"
+                android:backgroundTint="@color/purple_700"
+                android:fontFamily="sans-serif-black"
+                android:padding="10sp"
+                android:text="Producto"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="96dp"
+                android:layout_height="match_parent"
+                android:background="@color/purple_500"
+                android:backgroundTint="@color/purple_700"
+                android:fontFamily="sans-serif-black"
+                android:padding="10sp"
+                android:text="Precio"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView100"
+                android:layout_width="167dp"
+                android:layout_height="match_parent"
+                android:background="@color/purple_500"
+                android:backgroundTint="@color/purple_700"
+                android:fontFamily="sans-serif-black"
+                android:padding="10sp"
+                android:text="Cantidad"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView344"
+                android:layout_width="167dp"
+                android:layout_height="match_parent"
+                android:background="@color/purple_500"
+                android:backgroundTint="@color/purple_700"
+                android:fontFamily="sans-serif-black"
+                android:padding="10sp"
+                android:text="Valor"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_conversion_absoluteHeight="1dp"
+            tools:layout_conversion_absoluteWidth="962dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="149dp"
+                android:layout_height="match_parent"
+                android:background="@color/ceec"
+                android:backgroundTint="@color/e3ee"
+                android:padding="10sp"
+                android:text="Porción"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="181dp"
+                android:layout_height="match_parent"
+                android:background="@color/ceec"
+                android:backgroundTint="@color/e3ee"
+                android:padding="10sp"
+                android:text="$1,25"
+                android:textAlignment="center"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/cantidadPorcion"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/ceec"
+                android:backgroundTint="@color/e3ee"
+                android:padding="10sp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/txtTotalPorcion"
+                android:layout_width="149dp"
+                android:layout_height="match_parent"
+                android:background="@color/ceec"
+                android:backgroundTint="@color/e3ee"
+                android:padding="10sp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="13sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_conversion_absoluteHeight="1dp"
+            tools:layout_conversion_absoluteWidth="962dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="152dp"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/teal_700"
+                android:padding="10sp"
+                android:text="Mini"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="181dp"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/teal_700"
+                android:padding="10sp"
+                android:text="$2,50"
+                android:textAlignment="center"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/cantidadMini"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/e3ee"
+                android:padding="10sp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/txtTotalMini"
+                android:layout_width="149dp"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/teal_700"
+                android:padding="10sp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="13sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_conversion_absoluteHeight="1dp"
+            tools:layout_conversion_absoluteWidth="962dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="152dp"
+                android:layout_height="match_parent"
+                android:background="@color/ceec"
+                android:backgroundTint="@color/e3ee"
+                android:padding="10sp"
+                android:text="Pequeña"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="181dp"
+                android:layout_height="match_parent"
+                android:background="@color/ceec"
+                android:backgroundTint="@color/e3ee"
+                android:padding="10sp"
+                android:text="$4"
+                android:textAlignment="center"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/cantidadPeque"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/ceec"
+                android:backgroundTint="@color/e3ee"
+                android:padding="10sp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/txtTotalPeque"
+                android:layout_width="149dp"
+                android:layout_height="match_parent"
+                android:background="@color/ceec"
+                android:backgroundTint="@color/e3ee"
+                android:padding="10sp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="13sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10sp"
+                android:text="Mediana"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/textView31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10sp"
+                android:text="$7,50"
+                android:textAlignment="center"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/cantidadMe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10sp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/txtTotalMediana"
+                android:layout_width="149dp"
+                android:layout_height="match_parent"
+                android:padding="10sp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="13sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView35"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/ceec"
+                android:backgroundTint="@color/e3ee"
+                android:padding="10sp"
+                android:text="Familiar"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/textView34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/ceec"
+                android:backgroundTint="@color/e3ee"
+                android:padding="10sp"
+                android:text="$10"
+                android:textAlignment="center"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/cantidadFam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/ceec"
+                android:backgroundTint="@color/e3ee"
+                android:padding="10sp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/txtTotalFamiliar"
+                android:layout_width="149dp"
+                android:layout_height="match_parent"
+                android:background="@color/ceec"
+                android:backgroundTint="@color/e3ee"
+                android:padding="10sp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="13sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView38"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10sp"
+                android:text="Extra Grande"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/textView37"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10sp"
+                android:text="$12"
+                android:textAlignment="center"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/cantidadEG"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10sp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/txtTotalEG"
+                android:layout_width="149dp"
+                android:layout_height="match_parent"
+                android:padding="10sp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="13sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView41"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/ceec"
+                android:backgroundTint="@color/e3ee"
+                android:padding="10sp"
+                android:text="Cola 0,5"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/textView40"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/ceec"
+                android:backgroundTint="@color/e3ee"
+                android:padding="10sp"
+                android:text="$0,50"
+                android:textAlignment="center"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/cantidadCP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/ceec"
+                android:backgroundTint="@color/e3ee"
+                android:padding="10sp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/txtTotalCP"
+                android:layout_width="149dp"
+                android:layout_height="match_parent"
+                android:background="@color/ceec"
+                android:backgroundTint="@color/e3ee"
+                android:padding="10sp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="13sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView47"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10sp"
+                android:text="Cola 0,75"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10sp"
+                android:text="$0,75"
+                android:textAlignment="center"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/cantidadCM"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10sp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/txtTotalCM"
+                android:layout_width="149dp"
+                android:layout_height="match_parent"
+                android:padding="10sp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="13sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="76dp">
+
+            <TextView
+                android:id="@+id/textView50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/ceec"
+                android:backgroundTint="@color/e3ee"
+                android:padding="10sp"
+                android:text="Cola 1"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/textView49"
+                android:layout_width="137dp"
+                android:layout_height="match_parent"
+                android:background="@color/ceec"
+                android:backgroundTint="@color/e3ee"
+                android:padding="10sp"
+                android:text="$1"
+                android:textAlignment="center"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/cantidadCG"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/ceec"
+                android:backgroundTint="@color/e3ee"
+                android:padding="10sp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/txtTotalCG"
+                android:layout_width="149dp"
+                android:layout_height="match_parent"
+                android:background="@color/ceec"
+                android:backgroundTint="@color/e3ee"
+                android:padding="10sp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="13sp" />
+        </TableRow>
+
+
+    </TableLayout>
+
+</RelativeLayout>

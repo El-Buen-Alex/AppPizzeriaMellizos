@@ -1,0 +1,823 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ola"
+    tools:context=".RegistroPizzas"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+
+    <TextView
+        android:id="@+id/textView42"
+        android:layout_width="149dp"
+        android:layout_height="53dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="516dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="serif"
+        android:text="PEQUEÑA"
+        android:textAlignment="center"
+        android:textColor="@color/purple_500"
+        android:textSize="30sp" />
+
+    <Button
+
+        android:id="@+id/btnRPeque"
+        android:layout_width="wrap_content"
+        android:layout_height="62dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="491dp"
+        android:layout_marginBottom="264dp"
+        android:backgroundTint="@color/purple_500"
+        android:text="AÑADIR"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/contaPequenia"
+        android:layout_width="71dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="false"
+        android:layout_marginStart="555dp"
+        android:layout_marginTop="76dp"
+        android:fontFamily="sans-serif"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="36sp"
+        app:autoSizeTextType="none" />
+
+    <TextView
+        android:id="@+id/textView46"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="657dp"
+        android:layout_marginTop="49dp"
+        android:text="$4"
+        android:textColor="@color/purple_700"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtTotalFamiliar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="491dp"
+        android:layout_marginTop="128dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="Ultima actualización:" />
+
+    <Button
+
+        android:id="@+id/btnRestarPeque"
+        android:layout_width="wrap_content"
+        android:layout_height="62dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="594dp"
+        android:layout_marginBottom="264dp"
+        android:backgroundTint="@color/purple_700"
+        android:text="Restar"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/horaPequenia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="629dp"
+        android:layout_marginTop="128dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="00:00:00" />
+
+    <TextView
+        android:id="@+id/txtPorcion"
+        android:layout_width="149dp"
+        android:layout_height="53dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="21dp"
+        android:fontFamily="serif"
+        android:text="PORCION"
+        android:textAlignment="center"
+        android:textColor="@color/purple_500"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/contaMini"
+        android:layout_width="71dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="false"
+        android:layout_marginStart="320dp"
+        android:layout_marginTop="76dp"
+        android:fontFamily="sans-serif"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="36sp"
+        app:autoSizeTextType="none" />
+
+    <TextView
+        android:id="@+id/horaMini"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="396dp"
+        android:layout_marginTop="128dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="00:00:00" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="263dp"
+        android:layout_marginTop="369dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="Ultima actualización:" />
+
+    <EditText
+        android:id="@+id/numeroGastos"
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="756dp"
+        android:layout_marginTop="288dp"
+        android:layout_marginBottom="81dp"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:inputType="numberDecimal"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="149dp"
+        android:layout_height="53dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="257dp"
+        android:fontFamily="serif"
+        android:text="FAMILIAR"
+        android:textAlignment="center"
+        android:textColor="@color/purple_500"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/contaFamiliar"
+        android:layout_width="71dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="false"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="314dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="36sp"
+        app:autoSizeTextType="none" />
+
+    <TextView
+        android:id="@+id/horaFamiliar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="158dp"
+        android:layout_marginTop="369dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="00:00:00" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="369dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="Ultima actualización:" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="178dp"
+        android:layout_marginTop="291dp"
+        android:text="$10"
+        android:textColor="@color/purple_700"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnRFamiliar"
+        android:layout_width="wrap_content"
+        android:layout_height="61dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="25dp"
+        android:backgroundTint="@color/purple_500"
+        android:text="AÑADIR"
+        android:textSize="14sp" />
+
+    <Button
+
+        android:id="@+id/btnRestarFamiliar"
+        android:layout_width="wrap_content"
+        android:layout_height="61dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="123dp"
+        android:layout_marginBottom="25dp"
+        android:backgroundTint="@color/purple_700"
+        android:text="Restar" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="370dp"
+        android:layout_marginTop="53dp"
+        android:text="$2,5"
+        android:textColor="@color/purple_700"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/contaMediana"
+        android:layout_width="71dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="false"
+        android:layout_marginStart="796dp"
+        android:layout_marginTop="76dp"
+        android:fontFamily="sans-serif"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="36sp"
+        app:autoSizeTextType="none" />
+
+    <TextView
+        android:id="@+id/textView43"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="898dp"
+        android:layout_marginTop="49dp"
+        android:text="$7,5"
+        android:textColor="@color/purple_700"
+        android:textSize="18sp" />
+
+    <TextView
+
+        android:id="@+id/textView45"
+        android:layout_width="149dp"
+        android:layout_height="53dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="757dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="serif"
+        android:text="MEDIANA"
+        android:textAlignment="center"
+        android:textColor="@color/purple_500"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="732dp"
+        android:layout_marginTop="128dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="Ultima actualización:" />
+
+    <Button
+        android:id="@+id/btnRMediana"
+        android:layout_width="wrap_content"
+        android:layout_height="62dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="732dp"
+        android:layout_marginBottom="264dp"
+        android:backgroundTint="@color/purple_500"
+        android:text="AÑADIR"
+        android:textSize="14sp" />
+
+    <Button
+
+        android:id="@+id/btnRestarMediana"
+        android:layout_width="wrap_content"
+        android:layout_height="62dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="835dp"
+        android:layout_marginBottom="264dp"
+        android:backgroundTint="@color/purple_700"
+        android:text="Restar" />
+
+    <TextView
+        android:id="@+id/horaMediana"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="870dp"
+        android:layout_marginTop="128dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="00:00:00" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="128dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="Ultima actualización:" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="149dp"
+        android:layout_height="44dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="757dp"
+        android:layout_marginTop="258dp"
+        android:fontFamily="serif"
+        android:text="GASTOS"
+        android:textAlignment="center"
+        android:textColor="@color/purple_500"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/txtMini"
+        android:layout_width="78dp"
+        android:layout_height="53dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="316dp"
+        android:layout_marginTop="21dp"
+        android:fontFamily="serif"
+        android:text="MINI"
+        android:textAlignment="center"
+        android:textColor="@color/purple_500"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/contaPorcion"
+        android:layout_width="71dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="false"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="75dp"
+        android:fontFamily="sans-serif"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="36sp"
+        app:autoSizeTextType="none" />
+
+    <Button
+        android:id="@+id/btnGenerar"
+        android:layout_width="wrap_content"
+        android:layout_height="88dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="743dp"
+        android:layout_marginBottom="18dp"
+        android:backgroundTint="@color/teal_200"
+        android:text="GENERAR"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/horaPorcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="158dp"
+        android:layout_marginTop="128dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="00:00:00" />
+
+    <TextView
+        android:id="@+id/contaColaM"
+        android:layout_width="71dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="false"
+        android:layout_marginStart="586dp"
+        android:layout_marginTop="383dp"
+        android:fontFamily="sans-serif"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:autoSizeTextType="none" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="59dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="644dp"
+        android:layout_marginTop="311dp"
+        android:text="Ultima actualización:"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="258dp"
+        android:layout_marginTop="128dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="Ultima actualización:" />
+
+    <TextView
+
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="53dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="248dp"
+        android:layout_marginTop="257dp"
+        android:fontFamily="serif"
+        android:text="EXTRA GRANDE"
+        android:textAlignment="center"
+        android:textColor="@color/purple_500"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btnREG"
+        android:layout_width="wrap_content"
+        android:layout_height="61dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="256dp"
+        android:layout_marginBottom="26dp"
+        android:backgroundTint="@color/purple_500"
+        android:text="AÑADIR"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/horaEG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="399dp"
+        android:layout_marginTop="369dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="00:00:00" />
+
+    <TextView
+
+        android:id="@+id/horaColaP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+
+        android:layout_centerInParent="true"
+        android:layout_marginStart="646dp"
+        android:layout_marginTop="339dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="00:00:00" />
+
+    <Button
+        android:id="@+id/btnRestarEG"
+        android:layout_width="wrap_content"
+        android:layout_height="61dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="360dp"
+        android:layout_marginBottom="26dp"
+        android:backgroundTint="@color/purple_700"
+        android:text="Restar" />
+
+    <Button
+        android:id="@+id/btnRMini"
+        android:layout_width="wrap_content"
+        android:layout_height="62dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="258dp"
+        android:layout_marginBottom="264dp"
+        android:backgroundTint="@color/purple_500"
+        android:text="AÑADIR"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="448dp"
+        android:layout_marginTop="289dp"
+        android:text="$12"
+        android:textColor="@color/purple_700"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/contaColaP"
+        android:layout_width="71dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="false"
+        android:layout_marginStart="585dp"
+        android:layout_marginTop="337dp"
+        android:fontFamily="sans-serif"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:autoSizeTextType="none" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="173dp"
+        android:layout_marginTop="52dp"
+        android:text="$1,25"
+        android:textColor="@color/purple_700"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnGasto"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="837dp"
+        android:layout_marginBottom="129dp"
+        android:backgroundTint="@color/purple_500"
+        android:text="AÑADIR"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/btnRestarPorcion"
+        android:layout_width="wrap_content"
+        android:layout_height="62dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="123dp"
+        android:layout_marginBottom="264dp"
+        android:backgroundTint="@color/purple_700"
+        android:text="Restar" />
+
+    <TextView
+        android:id="@+id/contaEG"
+
+        android:layout_width="71dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="false"
+        android:layout_marginStart="320dp"
+        android:layout_marginTop="314dp"
+        android:fontFamily="sans-serif"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="36sp"
+        app:autoSizeTextType="none" />
+
+    <TextView
+        android:id="@+id/contaColaG"
+        android:layout_width="71dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="false"
+        android:layout_marginStart="586dp"
+        android:layout_marginTop="427dp"
+        android:fontFamily="sans-serif"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:autoSizeTextType="none" />
+
+    <Button
+        android:id="@+id/btnRPorcion"
+        android:layout_width="wrap_content"
+        android:layout_height="62dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="264dp"
+        android:backgroundTint="@color/purple_500"
+        android:text="AÑADIR"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/btnRestarMini"
+        android:layout_width="wrap_content"
+        android:layout_height="62dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="361dp"
+        android:layout_marginBottom="264dp"
+        android:backgroundTint="@color/purple_700"
+        android:text="Restar" />
+
+    <Button
+        android:id="@+id/btnRestarColaP"
+        android:layout_width="37dp"
+
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="564dp"
+        android:layout_marginBottom="107dp"
+        android:backgroundTint="@color/purple_700"
+        android:text="-"
+        android:textAlignment="center"
+        android:textIsSelectable="false"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/btnColaP"
+        android:layout_width="53dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="508dp"
+        android:layout_marginBottom="107dp"
+        android:backgroundTint="@color/purple_500"
+        android:text="0.50"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/btnRestarColaM"
+        android:layout_width="37dp"
+
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="564dp"
+        android:layout_marginBottom="62dp"
+        android:backgroundTint="@color/purple_700"
+        android:text="-"
+        android:textAlignment="center"
+        android:textIsSelectable="false"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/btnColaM"
+        android:layout_width="53dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="508dp"
+        android:layout_marginBottom="62dp"
+        android:backgroundTint="@color/purple_500"
+        android:text="0.75"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/btnColaG"
+        android:layout_width="53dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="508dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/purple_500"
+        android:text="1"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/btnRestarColaG"
+        android:layout_width="37dp"
+
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="564dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/purple_700"
+        android:text="-"
+        android:textAlignment="center"
+        android:textIsSelectable="false"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/horaColaG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="646dp"
+        android:layout_marginTop="430dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="00:00:00" />
+
+    <TextView
+        android:id="@+id/horaColaM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="646dp"
+        android:layout_marginTop="385dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="00:00:00" />
+
+    <TextView
+        android:id="@+id/txtGastosI"
+        android:layout_width="74dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="795dp"
+        android:layout_marginTop="-20dp"
+        android:textColor="@color/cardview_shadow_end_color" />
+
+    <TextView
+        android:id="@+id/txtMini3"
+        android:layout_width="112dp"
+        android:layout_height="44dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="534dp"
+        android:layout_marginTop="256dp"
+        android:fontFamily="serif"
+        android:text="COLAS"
+        android:textAlignment="center"
+        android:textColor="@color/purple_500"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/txtfecha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="@color/purple_500"
+        android:backgroundTint="@color/purple_500"
+        android:fontFamily="serif"
+        android:text="TextView"
+        android:textAlignment="textEnd"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+
+</RelativeLayout>
